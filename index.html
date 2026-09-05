@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al-Hosseiny Gad Abbas — Software Engineer</title>
+  <meta name="description" content="Bilingual (AR/EN) software engineering portfolio for Al-Hosseiny Gad Abbas — Flutter, embedded systems, and web development.">
+  <meta name="theme-color" content="#0A0A1A">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="progress-top"></div>
+
+<!-- ambient background glows -->
+<div class="bg-fx" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+  <span class="grid-lines"></span>
+</div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home">
+      <span class="brand-mark">AH</span>
+      <span class="brand-name" data-i18n="brand">Al-Hosseiny<span class="dot-accent">.</span></span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" data-i18n="nav.home">Home</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#resume" data-i18n="nav.resume">Resume</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#certificates" data-i18n="nav.certificates">Certificates</a></li>
+      <li><a href="#graduation" data-i18n="nav.graduation">Project</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">More</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <button class="icon-btn" id="lang-toggle" type="button" aria-label="Toggle language" data-i18n-aria-label="lang.aria">EN / AR</button>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle theme" data-i18n-aria-label="theme.aria">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" fill="currentColor"/></svg>
+      </button>
+      <a class="btn btn-primary btn-call" href="https://wa.me/201044603980" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M6.6 10.8a10 10 0 0 0 4.6 4.6l1.5-1.5a1 1 0 0 1 1-.24 11 11 0 0 0 3.4.55 1 1 0 0 1 1 1V18a1 1 0 0 1-1 1A16 16 0 0 1 3 5a1 1 0 0 1 1-1h2.8a1 1 0 0 1 1 1 11 11 0 0 0 .55 3.4 1 1 0 0 1-.25 1Z" fill="currentColor"/></svg>
+        <span data-i18n="nav.cta">WhatsApp</span>
+      </a>
+      <button class="icon-btn nav-burger" id="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links" data-i18n-aria-label="nav.menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-eyebrow hero-step" data-i18n="hero.eyebrow">I am Al-Hosseiny</p>
+        <h1 class="hero-title hero-step">
+          <span data-i18n="hero.title1">Software Engineer</span>
+          <span class="grad" data-i18n="hero.title2">Flutter &amp; Embedded</span>
+        </h1>
+        <p class="hero-tagline hero-step" data-i18n="hero.tagline">Software engineering graduate (2026) focused on building mobile apps with Flutter and working close to hardware with C and embedded systems. Comfortable moving between a phone screen and a circuit board.</p>
+        <div class="hero-actions hero-step">
+          <a href="#certificates" class="btn btn-primary" data-i18n="hero.cta1">View certificates</a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">Get in touch</a>
+          <a href="assets/cv/Al-Hosseiny-Gad-CV-EN.pdf" class="btn btn-soft" id="cv-btn"
+             download="Al-Hosseiny-Gad-CV-EN.pdf">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="hero.cta3">Download Resume / CV</span>
+          </a>
+        </div>
+        <ul class="hero-meta hero-step">
+          <li><span class="mi">📍</span><span data-i18n="hero.location">El-Minya, Egypt</span></li>
+          <li><span class="mi">🎓</span><span data-i18n="hero.gradyear">Class of 2026</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual hero-step">
+        <div class="photo-frame">
+          <img src="assets/images/me.jpg" width="640" height="640" fetchpriority="high" decoding="async"
+               alt="Al-Hosseiny Gad Abbas Ezz El-Arab, Software Engineer" data-i18n-alt="hero.photoAlt">
+          <span class="chip chip-a">
+            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="hero.chip1">Flutter Developer</span>
+          </span>
+          <span class="chip chip-b">
+            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span data-i18n="hero.chip2">Embedded Systems</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- real numbers only: age, graduation year, certificate count, documented training hours -->
+    <div class="wrap">
+      <div class="stat-row" id="stats">
+        <div class="stat-card reveal">
+          <div class="stat-value" data-count="24">24</div>
+          <div class="stat-label" data-i18n="stat.age">Years old</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value" data-count="2026" data-plain="1">2026</div>
+          <div class="stat-label" data-i18n="stat.grad">Class of</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value" data-count="5">5</div>
+          <div class="stat-label" data-i18n="stat.certs">Certificates</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value" data-count="230" data-suffix="+">230+</div>
+          <div class="stat-label" data-i18n="stat.hours">Training hours</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= ABOUT / WHAT I DO ================= -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2><span data-i18n="about.title1">What I</span> <span class="grad" data-i18n="about.title2">Do</span></h2>
+        <p data-i18n="about.sub">A software engineer from El-Minya, Egypt, working between mobile interfaces and the hardware underneath them.</p>
+      </div>
+
+      <div class="about-intro reveal">
+        <p data-i18n="about.p1">Al-Hosseiny is a software engineer based in El-Minya, Egypt, who graduated in 2026 with a professional bachelor's degree in technology, specializing in Software Engineering.</p>
+        <p data-i18n="about.p2">His hands-on focus sits at the intersection of mobile development and embedded hardware: building interfaces in Flutter, then wiring them to the C-based logic that runs on the device itself. He is equally comfortable in C++, Java and the core web stack — HTML, CSS and JavaScript.</p>
+      </div>
+
+      <div class="do-list">
+        <article class="do-row reveal">
+          <span class="do-num">01</span>
+          <div class="do-body">
+            <h3 data-i18n="do.1.title">Mobile Development</h3>
+            <p data-i18n="do.1.body">Building cross-platform mobile apps with Flutter and Dart — from layout and state to talking to a real backend.</p>
+          </div>
+          <span class="do-tag mono">Flutter</span>
+        </article>
+        <article class="do-row reveal">
+          <span class="do-num">02</span>
+          <div class="do-body">
+            <h3 data-i18n="do.2.title">Embedded Systems &amp; IoT</h3>
+            <p data-i18n="do.2.body">Working close to the hardware in C: microcontrollers, sensors and the logic that runs on the device itself.</p>
+          </div>
+          <span class="do-tag mono">C · MCU</span>
+        </article>
+        <article class="do-row reveal">
+          <span class="do-num">03</span>
+          <div class="do-body">
+            <h3 data-i18n="do.3.title">Programming Languages</h3>
+            <p data-i18n="do.3.body">Object-oriented fundamentals and problem solving in C++ and Java, backed by formal training.</p>
+          </div>
+          <span class="do-tag mono">C++ · Java</span>
+        </article>
+        <article class="do-row reveal">
+          <span class="do-num">04</span>
+          <div class="do-body">
+            <h3 data-i18n="do.4.title">Web Development</h3>
+            <p data-i18n="do.4.body">The core web stack — semantic HTML, modern CSS and vanilla JavaScript — used to build responsive, accessible interfaces.</p>
+          </div>
+          <span class="do-tag mono">HTML · CSS · JS</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESUME ================= -->
+  <section class="section" id="resume">
+    <div class="wrap">
+      <div class="resume-grid">
+        <div>
+          <h2 class="tl-head reveal">
+            <span class="tl-ico">🎓</span>
+            <span data-i18n="resume.edu1">My</span> <span class="grad" data-i18n="resume.edu2">Education</span>
+          </h2>
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <span class="tl-date mono" data-i18n="edu.date">2026</span>
+              <div class="tl-card">
+                <h3 data-i18n="education.degree">Professional Bachelor's Degree in Technology</h3>
+                <p class="tl-org" data-i18n="education.uni">New Assiut Technological University</p>
+                <ul class="tl-meta">
+                  <li><b data-i18n="education.facultyLabel">Faculty:</b> <span data-i18n="education.faculty">Industrial and Energy Technology</span></li>
+                  <li><b data-i18n="education.deptLabel">Department:</b> <span data-i18n="education.dept">Information Technology</span></li>
+                  <li><b data-i18n="education.trackLabel">Specialization:</b> <span data-i18n="education.track">Software Engineering</span></li>
+                </ul>
+                <span class="pill" data-i18n="education.gradeline">Graduated 2026 — Grade: Good (74.5%)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="tl-head reveal">
+            <span class="tl-ico">📜</span>
+            <span data-i18n="resume.tr1">My</span> <span class="grad" data-i18n="resume.tr2">Training</span>
+          </h2>
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <span class="tl-date mono">2025</span>
+              <div class="tl-card">
+                <h3 data-i18n="certs.item.hcia.title">HCIA-AI V3.5</h3>
+                <p class="tl-org" data-i18n="tr.hcia.org">Huawei Talent</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-date mono">2025</span>
+              <div class="tl-card">
+                <h3 data-i18n="certs.item.ai.title">Artificial Intelligence (AI)</h3>
+                <p class="tl-org" data-i18n="tr.ai.org">NTI · Huawei Egyptian Talent Academy — 80 hrs</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-date mono">2024</span>
+              <div class="tl-card">
+                <h3 data-i18n="certs.item.java.title">Introduction to Programming using Java</h3>
+                <p class="tl-org" data-i18n="tr.java.org">Information Technology Institute (ITI) — 30 hrs</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-date mono">2023</span>
+              <div class="tl-card">
+                <h3 data-i18n="certs.item.ccna.title">Cisco CCNA</h3>
+                <p class="tl-org" data-i18n="tr.ccna.org">WE Telecom Egypt</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-date mono" data-i18n="tr.nodate">Diploma</span>
+              <div class="tl-card">
+                <h3 data-i18n="certs.item.flutter.title">Flutter Development Diploma</h3>
+                <p class="tl-org" data-i18n="tr.flutter.org">Route IT Training Center — 120 hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <h2><span data-i18n="skills.title1">My</span> <span class="grad" data-i18n="skills.title2">Skills</span></h2>
+      </div>
+
+      <div class="skill-grid">
+        <!-- ring fill mirrors the 3-step self-assessment: 3/3 = Very good, 2/3 = Good -->
+        <article class="skill-card reveal" style="--p:1">
+          <span class="skill-mark">F</span>
+          <div class="ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+              <circle class="ring-fg" cx="60" cy="60" r="52"></circle>
+            </svg>
+            <span class="ring-label" data-i18n="skills.lvl.verygood">Very good</span>
+          </div>
+          <h3>Flutter</h3>
+        </article>
+        <article class="skill-card reveal" style="--p:.6667">
+          <span class="skill-mark">µC</span>
+          <div class="ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+              <circle class="ring-fg" cx="60" cy="60" r="52"></circle>
+            </svg>
+            <span class="ring-label" data-i18n="skills.lvl.good">Good</span>
+          </div>
+          <h3 data-i18n="skills.embeddedSystems">Embedded Systems</h3>
+        </article>
+        <article class="skill-card reveal" style="--p:.6667">
+          <span class="skill-mark">C</span>
+          <div class="ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+              <circle class="ring-fg" cx="60" cy="60" r="52"></circle>
+            </svg>
+            <span class="ring-label" data-i18n="skills.lvl.good">Good</span>
+          </div>
+          <h3>C</h3>
+        </article>
+        <article class="skill-card reveal" style="--p:1">
+          <span class="skill-mark">C++</span>
+          <div class="ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+              <circle class="ring-fg" cx="60" cy="60" r="52"></circle>
+            </svg>
+            <span class="ring-label" data-i18n="skills.lvl.verygood">Very good</span>
+          </div>
+          <h3>C++</h3>
+        </article>
+        <article class="skill-card reveal" style="--p:1">
+          <span class="skill-mark">J</span>
+          <div class="ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+              <circle class="ring-fg" cx="60" cy="60" r="52"></circle>
+            </svg>
+            <span class="ring-label" data-i18n="skills.lvl.verygood">Very good</span>
+          </div>
+          <h3>Java</h3>
+        </article>
+        <article class="skill-card reveal" style="--p:1">
+          <span class="skill-mark">&lt;/&gt;</span>
+          <div class="ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+              <circle class="ring-fg" cx="60" cy="60" r="52"></circle>
+            </svg>
+            <span class="ring-label" data-i18n="skills.lvl.verygood">Very good</span>
+          </div>
+          <h3>HTML / CSS</h3>
+        </article>
+        <article class="skill-card reveal" style="--p:1">
+          <span class="skill-mark">JS</span>
+          <div class="ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+              <circle class="ring-fg" cx="60" cy="60" r="52"></circle>
+            </svg>
+            <span class="ring-label" data-i18n="skills.lvl.verygood">Very good</span>
+          </div>
+          <h3>JavaScript</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATES ================= -->
+  <section class="section" id="certificates">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <h2><span data-i18n="certs.title1">My</span> <span class="grad" data-i18n="certs.title2">Certificates</span></h2>
+        <p data-i18n="certs.sub">Training and professional certificates. Open any card to view the full certificate.</p>
+      </div>
+
+      <div class="cert-grid">
+        <button class="cert-card reveal" type="button" data-lightbox-full="assets/certificates/graduation-certificate.jpg">
+          <span class="cert-thumb">
+            <img src="assets/certificates/graduation-certificate-thumb.jpg" width="800" height="600" loading="lazy" decoding="async"
+                 alt="Graduation certificate from New Assiut Technological University" data-i18n-alt="certs.item.grad.alt">
+            <span class="cert-zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+          <span class="cert-body">
+            <span class="cert-title" data-lightbox-caption data-i18n="certs.item.grad.title">Graduation Certificate</span>
+            <span class="cert-meta mono" data-i18n="certs.item.grad.meta">New Assiut Technological University · 2026 · Grade: Good (74.5%)</span>
+            <span class="cert-hint" data-i18n="certs.hint">Click to enlarge</span>
+          </span>
+        </button>
+        <button class="cert-card reveal" type="button" data-lightbox-full="assets/certificates/flutter-development-diploma.jpg">
+          <span class="cert-thumb">
+            <img src="assets/certificates/flutter-development-diploma-thumb.jpg" width="800" height="600" loading="lazy" decoding="async"
+                 alt="Flutter development diploma certificate from Route IT Training Center" data-i18n-alt="certs.item.flutter.alt">
+            <span class="cert-zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+          <span class="cert-body">
+            <span class="cert-title" data-lightbox-caption data-i18n="certs.item.flutter.title">Flutter Development Diploma</span>
+            <span class="cert-meta mono" data-i18n="certs.item.flutter.meta">Route IT Training Center · 120 hrs</span>
+            <span class="cert-hint" data-i18n="certs.hint">Click to enlarge</span>
+          </span>
+        </button>
+        <button class="cert-card reveal" type="button" data-lightbox-full="assets/certificates/ai-nti-huawei-academy.jpg">
+          <span class="cert-thumb">
+            <img src="assets/certificates/ai-nti-huawei-academy-thumb.jpg" width="800" height="600" loading="lazy" decoding="async"
+                 alt="Artificial Intelligence track certificate from NTI and the Huawei Egyptian Talent Academy" data-i18n-alt="certs.item.ai.alt">
+            <span class="cert-zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+          <span class="cert-body">
+            <span class="cert-title" data-lightbox-caption data-i18n="certs.item.ai.title">Artificial Intelligence (AI)</span>
+            <span class="cert-meta mono" data-i18n="certs.item.ai.meta">NTI · Huawei Egyptian Talent Academy · 80 hrs · 2025</span>
+            <span class="cert-hint" data-i18n="certs.hint">Click to enlarge</span>
+          </span>
+        </button>
+        <button class="cert-card reveal" type="button" data-lightbox-full="assets/certificates/huawei-hcia-ai.jpg">
+          <span class="cert-thumb">
+            <img src="assets/certificates/huawei-hcia-ai-thumb.jpg" width="800" height="600" loading="lazy" decoding="async"
+                 alt="HCIA-AI V3.5 certificate of completion from Huawei Talent" data-i18n-alt="certs.item.hcia.alt">
+            <span class="cert-zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+          <span class="cert-body">
+            <span class="cert-title" data-lightbox-caption data-i18n="certs.item.hcia.title">HCIA-AI V3.5</span>
+            <span class="cert-meta mono" data-i18n="certs.item.hcia.meta">Huawei Talent · 2025</span>
+            <span class="cert-hint" data-i18n="certs.hint">Click to enlarge</span>
+          </span>
+        </button>
+        <button class="cert-card reveal" type="button" data-lightbox-full="assets/certificates/java-programming-iti.jpg">
+          <span class="cert-thumb">
+            <img src="assets/certificates/java-programming-iti-thumb.jpg" width="800" height="600" loading="lazy" decoding="async"
+                 alt="Introduction to Programming using Java certificate from the Information Technology Institute" data-i18n-alt="certs.item.java.alt">
+            <span class="cert-zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+          <span class="cert-body">
+            <span class="cert-title" data-lightbox-caption data-i18n="certs.item.java.title">Introduction to Programming using Java</span>
+            <span class="cert-meta mono" data-i18n="certs.item.java.meta">Information Technology Institute (ITI) · 30 hrs · 2024</span>
+            <span class="cert-hint" data-i18n="certs.hint">Click to enlarge</span>
+          </span>
+        </button>
+        <button class="cert-card reveal" type="button" data-lightbox-full="assets/certificates/cisco-ccna.jpg">
+          <span class="cert-thumb">
+            <img src="assets/certificates/cisco-ccna-thumb.jpg" width="800" height="600" loading="lazy" decoding="async"
+                 alt="Cisco CCNA training course certificate from WE Telecom Egypt" data-i18n-alt="certs.item.ccna.alt">
+            <span class="cert-zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+          <span class="cert-body">
+            <span class="cert-title" data-lightbox-caption data-i18n="certs.item.ccna.title">Cisco CCNA</span>
+            <span class="cert-meta mono" data-i18n="certs.item.ccna.meta">WE Telecom Egypt · 2023</span>
+            <span class="cert-hint" data-i18n="certs.hint">Click to enlarge</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GRADUATION PROJECT ================= -->
+  <section class="section" id="graduation">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <h2><span data-i18n="grad.title1">Graduation</span> <span class="grad" data-i18n="grad.title2">Project</span></h2>
+        <p data-i18n="grad.sub">The capstone project for my degree — and the part of it I built.</p>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-head">
+          <span class="proj-logo" aria-hidden="true">🌿</span>
+          <div>
+            <h3 class="proj-name">Smart Farming</h3>
+            <p class="proj-kicker" data-i18n="grad.kicker">IoT precision-agriculture platform · Graduation project, 2026</p>
+            <p class="proj-grade" data-i18n="grad.grade">Project grade: Excellent</p>
+          </div>
+          <span class="proj-badge" data-i18n="grad.role">My role: Flutter app</span>
+        </div>
+
+        <div class="proj-body">
+          <p data-i18n="grad.p1">Smart Farming monitors a real farm through four field sensors — soil temperature, soil moisture, air temperature and air humidity — and turns those readings into decisions a farmer can act on. Sensor logs land in Firebase Firestore, and the app reads them live.</p>
+          <p data-i18n="grad.p2">I built the Flutter mobile application: the full interface, the Firestore data layer, the live dashboard and charts, remote pump control, the alert system, and the screens that present the machine-learning output — a Random Forest model that recommends a crop and scores plant-disease risk. The app ships bilingual (Arabic / English) with a dark mode.</p>
+        </div>
+
+        <div class="proj-stack">
+          <span class="proj-stack-label" data-i18n="grad.stack">Built with</span>
+          <ul>
+            <li class="mono">Flutter</li>
+            <li class="mono">Dart</li>
+            <li class="mono">Firebase Firestore</li>
+            <li class="mono">Firebase Auth</li>
+            <li class="mono">Push Notifications</li>
+            <li class="mono">Weather API</li>
+            <li class="mono">Charts</li>
+            <li class="mono">AR / EN</li>
+            <li class="mono">Dark Mode</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feat-grid">
+          <div class="feat reveal">
+            <span class="feat-ico" aria-hidden="true">📡</span>
+            <div>
+              <h4 data-i18n="feat.live.title">Feature</h4>
+              <p data-i18n="feat.live.body">Description</p>
+            </div>
+          </div>
+          <div class="feat reveal">
+            <span class="feat-ico" aria-hidden="true">🚿</span>
+            <div>
+              <h4 data-i18n="feat.pump.title">Feature</h4>
+              <p data-i18n="feat.pump.body">Description</p>
+            </div>
+          </div>
+          <div class="feat reveal">
+            <span class="feat-ico" aria-hidden="true">📈</span>
+            <div>
+              <h4 data-i18n="feat.history.title">Feature</h4>
+              <p data-i18n="feat.history.body">Description</p>
+            </div>
+          </div>
+          <div class="feat reveal">
+            <span class="feat-ico" aria-hidden="true">🌦️</span>
+            <div>
+              <h4 data-i18n="feat.weather.title">Feature</h4>
+              <p data-i18n="feat.weather.body">Description</p>
+            </div>
+          </div>
+          <div class="feat reveal">
+            <span class="feat-ico" aria-hidden="true">🧠</span>
+            <div>
+              <h4 data-i18n="feat.ai.title">Feature</h4>
+              <p data-i18n="feat.ai.body">Description</p>
+            </div>
+          </div>
+          <div class="feat reveal">
+            <span class="feat-ico" aria-hidden="true">🔔</span>
+            <div>
+              <h4 data-i18n="feat.alerts.title">Feature</h4>
+              <p data-i18n="feat.alerts.body">Description</p>
+            </div>
+          </div>
+      </div>
+
+      <h3 class="shots-title reveal" data-i18n="grad.screens">Inside the app</h3>
+      <p class="shots-hint reveal" data-i18n="grad.screensHint">Tap any screen to view it full size.</p>
+      <div class="shot-strip">
+          <button class="shot reveal" type="button"
+                  data-lightbox-full="assets/projects/smart-farming-home-dashboard.jpg">
+            <img src="assets/projects/smart-farming-home-dashboard-thumb.jpg" width="360" height="800" loading="lazy" decoding="async"
+                 alt="" data-i18n-alt="shot.home.alt">
+            <span class="shot-cap" data-lightbox-caption data-i18n="shot.home">Screen</span>
+          </button>
+          <button class="shot reveal" type="button"
+                  data-lightbox-full="assets/projects/smart-farming-sensor-detail.jpg">
+            <img src="assets/projects/smart-farming-sensor-detail-thumb.jpg" width="360" height="800" loading="lazy" decoding="async"
+                 alt="" data-i18n-alt="shot.sensor.alt">
+            <span class="shot-cap" data-lightbox-caption data-i18n="shot.sensor">Screen</span>
+          </button>
+          <button class="shot reveal" type="button"
+                  data-lightbox-full="assets/projects/smart-farming-sensor-history.jpg">
+            <img src="assets/projects/smart-farming-sensor-history-thumb.jpg" width="360" height="800" loading="lazy" decoding="async"
+                 alt="" data-i18n-alt="shot.history.alt">
+            <span class="shot-cap" data-lightbox-caption data-i18n="shot.history">Screen</span>
+          </button>
+          <button class="shot reveal" type="button"
+                  data-lightbox-full="assets/projects/smart-farming-daily-report.jpg">
+            <img src="assets/projects/smart-farming-daily-report-thumb.jpg" width="360" height="800" loading="lazy" decoding="async"
+                 alt="" data-i18n-alt="shot.report.alt">
+            <span class="shot-cap" data-lightbox-caption data-i18n="shot.report">Screen</span>
+          </button>
+          <button class="shot reveal" type="button"
+                  data-lightbox-full="assets/projects/smart-farming-weather-forecast.jpg">
+            <img src="assets/projects/smart-farming-weather-forecast-thumb.jpg" width="360" height="800" loading="lazy" decoding="async"
+                 alt="" data-i18n-alt="shot.weather.alt">
+            <span class="shot-cap" data-lightbox-caption data-i18n="shot.weather">Screen</span>
+          </button>
+          <button class="shot reveal" type="button"
+                  data-lightbox-full="assets/projects/smart-farming-ai-crop-recommendation.jpg">
+            <img src="assets/projects/smart-farming-ai-crop-recommendation-thumb.jpg" width="360" height="800" loading="lazy" decoding="async"
+                 alt="" data-i18n-alt="shot.crop.alt">
+            <span class="shot-cap" data-lightbox-caption data-i18n="shot.crop">Screen</span>
+          </button>
+          <button class="shot reveal" type="button"
+                  data-lightbox-full="assets/projects/smart-farming-ai-disease-risk.jpg">
+            <img src="assets/projects/smart-farming-ai-disease-risk-thumb.jpg" width="360" height="800" loading="lazy" decoding="async"
+                 alt="" data-i18n-alt="shot.disease.alt">
+            <span class="shot-cap" data-lightbox-caption data-i18n="shot.disease">Screen</span>
+          </button>
+          <button class="shot reveal" type="button"
+                  data-lightbox-full="assets/projects/smart-farming-alerts.jpg">
+            <img src="assets/projects/smart-farming-alerts-thumb.jpg" width="360" height="800" loading="lazy" decoding="async"
+                 alt="" data-i18n-alt="shot.alerts.alt">
+            <span class="shot-cap" data-lightbox-caption data-i18n="shot.alerts">Screen</span>
+          </button>
+          <button class="shot reveal" type="button"
+                  data-lightbox-full="assets/projects/smart-farming-settings.jpg">
+            <img src="assets/projects/smart-farming-settings-thumb.jpg" width="360" height="800" loading="lazy" decoding="async"
+                 alt="" data-i18n-alt="shot.settings.alt">
+            <span class="shot-cap" data-lightbox-caption data-i18n="shot.settings">Screen</span>
+          </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS (honest empty state) ================= -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <h2><span data-i18n="projects.title1">More</span> <span class="grad" data-i18n="projects.title2">Work</span></h2>
+      </div>
+      <div class="empty-panel reveal">
+        <div class="empty-icon">🛠️</div>
+        <h3 data-i18n="projects.ph.title">More projects coming soon</h3>
+        <p data-i18n="projects.ph.body">Real project write-ups — Flutter apps, embedded builds and web work — will be added here shortly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <h2><span data-i18n="contact.title1">Let's work</span> <span class="grad" data-i18n="contact.title2">together!</span></h2>
+        <p data-i18n="contact.sub">Just simple like that.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-panel reveal">
+          <!-- no backend: this composes a prefilled WhatsApp message to the real number -->
+          <form id="wa-form" novalidate>
+            <div class="field">
+              <label for="wa-name" data-i18n="form.name">Your name</label>
+              <input id="wa-name" name="name" type="text" autocomplete="name" required
+                     placeholder="Your name" data-i18n-placeholder="form.name">
+            </div>
+            <div class="field">
+              <label for="wa-subject" data-i18n="form.subject">Subject</label>
+              <select id="wa-subject" name="subject">
+                <option value="job" data-i18n="form.opt.job">Job opportunity</option>
+                <option value="freelance" data-i18n="form.opt.freelance">Freelance project</option>
+                <option value="other" data-i18n="form.opt.other">Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="wa-message" data-i18n="form.message">Your message</label>
+              <textarea id="wa-message" name="message" rows="5" required
+                        placeholder="Your message" data-i18n-placeholder="form.message"></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">
+              <span data-i18n="form.send">Send via WhatsApp</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-note" data-i18n="form.note">This opens WhatsApp with your message ready to send — nothing is stored on this site.</p>
+          </form>
+        </div>
+
+        <div class="contact-side">
+          <a class="contact-card reveal" href="https://wa.me/201044603980" target="_blank" rel="noopener">
+            <span class="c-icon">📱</span>
+            <span class="c-text">
+              <span class="c-label" data-i18n="contact.phoneLabel">Phone / WhatsApp</span>
+              <span class="c-value mono">+20 10 4460 3980</span>
+            </span>
+          </a>
+          <a class="contact-card reveal" href="mailto:Kareemgad114@gmail.com">
+            <span class="c-icon">✉️</span>
+            <span class="c-text">
+              <span class="c-label" data-i18n="contact.emailLabel">Email</span>
+              <span class="c-value mono">Kareemgad114@gmail.com</span>
+            </span>
+          </a>
+          <div class="contact-card reveal">
+            <span class="c-icon">📍</span>
+            <span class="c-text">
+              <span class="c-label" data-i18n="contact.locLabel">Location</span>
+              <span class="c-value" data-i18n="hero.location">El-Minya, Egypt</span>
+            </span>
+          </div>
+          <p class="contact-note reveal" data-i18n="contact.note">Email and social links (LinkedIn, GitHub) will be added here once shared.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="footer-logo">Al-Hosseiny<span class="dot-accent">.</span></span>
+      <p data-i18n="footer.blurb">Software engineer working between Flutter interfaces and the embedded systems underneath them.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.links">Quick Links</h4>
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#resume" data-i18n="nav.resume">Resume</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.more">More</h4>
+      <ul>
+        <li><a href="#certificates" data-i18n="nav.certificates">Certificates</a></li>
+        <li><a href="#graduation" data-i18n="nav.graduation">Project</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">More</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.reach">Reach out</h4>
+      <ul>
+        <li><a href="mailto:Kareemgad114@gmail.com" class="mono">Kareemgad114@gmail.com</a></li>
+        <li><a href="https://wa.me/201044603980" target="_blank" rel="noopener" class="mono">+20 10 4460 3980</a></li>
+        <li><span class="muted" data-i18n="hero.location">El-Minya, Egypt</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span data-i18n="footer.rights">© 2026 Al-Hosseiny Gad Abbas Ezz El-Arab</span>
+    <span class="mono" data-i18n="footer.tag">Software Engineer · Flutter · Embedded Systems</span>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="Back to top" data-i18n-aria-label="nav.top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<div class="lightbox" id="cert-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" hidden>
+  <div class="lightbox-backdrop" data-lightbox-close></div>
+  <div class="lightbox-panel">
+    <div class="lightbox-bar">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+      <button class="lightbox-close" id="lightbox-close" type="button"
+              aria-label="Close" data-i18n-aria-label="certs.close">✕</button>
+    </div>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

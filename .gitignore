@@ -1,0 +1,21 @@
+# Original camera / phone sources.
+# The site ships optimised copies under assets/images, assets/certificates and
+# assets/projects. These raw files are kept locally only — the settings
+# screenshot among them still shows a personal email address that is blurred
+# in the published copy, so it must never be pushed to a public repo.
+/assets/*.jpeg
+/assets/*.jpg
+/assets/images/me.jpeg
+# Raw sources dropped in the project root. The graduation certificate here
+# still shows the national ID number that is blacked out in the published copy.
+/*.jpeg
+/*.jpg
+/*.png
+
+# Superseded scaffold archive
+al-hosseiny-portfolio_1.zip
+
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
